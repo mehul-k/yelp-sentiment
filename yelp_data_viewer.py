@@ -42,8 +42,13 @@ def get_analysis(mined_data):
         print("7. Go back to main menu.")
         print("")
         option_selected = input("Enter your selection index here [(1-7),(1-10)]: ").split(",")
+        print("----")
         if option_selected[0] == '7':
             break
+        if len(option_selected) == 1:
+            print("Please enter the number of desired review! (Comma Separated)")
+            print("----")
+            continue
         if option_selected[0] == '1':
             sentences = get_sentences(mined_data, option_selected[1], True, False, False, False, False)
         elif option_selected[0] == '2':
@@ -61,6 +66,8 @@ def get_analysis(mined_data):
         for index, row in sentences.iterrows():
             print("SENTENCE {}: ".format(i))
             print(row['text'])
+            print("")
+            print("Stars: {}".format(row['stars']))
             print("Polarity: {}".format(row['polarity']))
             print("Subjectivity: {}".format(row['subjectivity']))
             print("----")
