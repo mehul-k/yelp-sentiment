@@ -64,7 +64,7 @@ def run_pos_tagging():
     while True:
         print("")
         print("NLTK and spaCy toolkits used for POS Tagging.")
-        print("Slightly diffrent results, for example NLTK: [('first', 'RB')] spaCy: [('first', 'ADJ')]")
+        print("Slightly different results, for example NLTK: [('first', 'RB')] spaCy: [('first', 'ADJ')]")
         print("")
         print("Please choose an option from below to continue!")
         print("1. View NLTK POS Tagging.")
