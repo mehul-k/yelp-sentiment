@@ -5,6 +5,7 @@ def analyse_sentence():
     print("SENTENCE ANALYSER")
     print("----")
     while True:
+        print("Ensure the sentence is of proper spelling.")
         sentence = input("Enter your sentence here: ")
         print("Calculating ....")
         sentiment = TextBlob(sentence).sentiment
