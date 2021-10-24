@@ -69,8 +69,6 @@ def run_noun_adj_pair():
     top=onestarPairs.sort_values(by='Frequency',ascending=False)
     top=top.reset_index(drop=True)
 
-    rdOne.to_json("receive.json")
-
     while True:
         print("View Star-Wise Noun-Adj Pairs")
         print("")
