@@ -1,4 +1,5 @@
 import pandas as pd
+from print_description import analysis_description
 
 def get_sentences(df, num_sentences, positive: bool, negative: bool, subjective: bool, objectivity: bool, top: bool):
     num_sentences = int(num_sentences)
@@ -68,7 +69,13 @@ def get_analysis(mined_data):
             print(row['text'])
             print("")
             print("Stars: {}".format(row['stars']))
-            print("Polarity: {}".format(row['polarity']))
-            print("Subjectivity: {}".format(row['subjectivity']))
+            polar=row['polarity']
+            subjvty=row['subjectivity']
+            print("Polarity: {0:.3f}".format(polar), end="\t\t")
+            print("Subjectivity: {0:.3f}".format(subjvty))
+            print("")
+            
+            analysis_description(polar,subjvty)
+            
             print("----")
             i+=1
