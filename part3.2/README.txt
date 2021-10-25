@@ -4,7 +4,7 @@ This is a basic CLI application for analysing Yelp Dataset
 
 - Tokenization and Stemming
 - POS Tagging
-- Noun-Adj Pairs (REview Star Wise)
+- Noun-Adj Pairs (Review Star Wise)
 
 Writing Style has been included as separate `.ipynb` (Python Notebook - Should be accessible via Jupyter Notebook) file due to the nature of the task.
 
